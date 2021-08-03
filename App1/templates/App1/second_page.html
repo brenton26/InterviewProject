@@ -1,0 +1,8 @@
+{% load static %}
+<h1>User: {{ name }}</h1>
+<form method="post" class="subtitle">
+    {% csrf_token %}
+    <button value="{{ id }}" type="submit"><img src="{% static 'App1/cow.jpg' %}"></button>
+</form>
+
+<h1>Clicks: {{ clicks }}</h1>

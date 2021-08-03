@@ -1,0 +1,10 @@
+<h2>Leaderboard</h2>
+
+
+{% for user in users %}
+<div style="border:2px solid black">
+    <a href="{{ user.pk }}">
+        <h1>User: {{ user.name }} &nbsp;&nbsp;&nbsp; {{ user.clicks }}</h1>
+    </a>
+</div>
+{% endfor %}
